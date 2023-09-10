@@ -3,14 +3,15 @@
     <h2 class="top-work-ttl">Works</h2>
     <div class="top-work-list">
       <article class="top-work-item">
-        <a href="#" class="top-work-item-thumbnail">
+        <router-link to="/todo" class="top-work-item-thumbnail">
           <img 
             src="../assets/todo.png" 
             alt="todo" 
             class="top-work-item-img" />
-        </a>
+        </router-link>
         <h3 class="top-work-item-ttl">
-          <a href="#">Todoアプリ</a>
+          <router-link to="/todo" >Todoアプリ</router-link>
+          
         </h3>
       </article>
       <article class="top-work-item">
@@ -24,7 +25,7 @@
         <div class="top-work-item-info">
         </div>
         <h3 class="top-work-item-ttl">
-          <a href="#">飲食店アプリ</a>
+          <a href="/todo">飲食店アプリ</a>
         </h3>
       </article>
       <article class="top-work-item">
@@ -45,7 +46,7 @@
 
 <script>
 export default {
-  name: 'Works'
+  name: 'Works-name'
 }
 </script>
 

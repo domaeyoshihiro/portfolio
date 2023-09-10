@@ -11,7 +11,7 @@
 
 <script>
 export default {
-  name: 'Mv'
+  name: 'Mv-name'
 }
 </script>
 

@@ -178,7 +178,7 @@
 
 <script>
 export default {
-  name: 'Skill'
+  name: 'Skill-name'
 }
 </script>
 

@@ -4,6 +4,7 @@
   <Works />
   <Skill />
   <Profile />
+  <Contact />
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import Mv from './components/Mv.vue'
 import Works from './components/Works.vue'
 import Skill from './components/Skill.vue'
 import Profile from './components/Profile.vue'
+import Contact from './components/Contact.vue'
 
 export default {
   name: 'App',
@@ -20,7 +22,8 @@ export default {
     Mv,
     Works,
     Skill,
-    Profile
+    Profile,
+    Contact
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div class="top-profile" id="profile">
-    <h2 class="top-profile-ttl">Profile</h2>
+    <h2 class="top-profile-ttl">PROFILE</h2>
     <div class="top-profile-flex">
       <div>
         <img
@@ -27,7 +27,7 @@
 
 <script>
 export default {
-  name: 'Profile'
+  name: 'Profile-name'
 }
 </script>
 
