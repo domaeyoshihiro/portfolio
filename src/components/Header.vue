@@ -5,6 +5,7 @@
     </h1>
     <nav class="header-nav">
       <ul class="header-nav-list">
+        <li class="header-nav-item"><a href="/" class="header-nav-item-text">TOP</a></li>
         <li class="header-nav-item"><a href="#works" class="header-nav-item-text">WORKS</a></li>
         <li class="header-nav-item"><a href="#skill" class="header-nav-item-text">SKILL</a></li>
         <li class="header-nav-item"><a href="#profile" class="header-nav-item-text">PROFILE</a></li>

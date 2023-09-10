@@ -2,7 +2,10 @@
   <div class="top-contact" id="contact">
     <h2 class="top-contact-ttl">CONTACT</h2>
     <div class="top-contact-flex">
-      <h3 class="top-contact-email">domae.yoshihiro@gmail.com</h3>
+      <div>
+        <p class="top-contact-txt">お仕事の依頼などは下記メールアドレスにご連絡お願いいたします。</p>
+        <p class="top-contact-email">domae.yoshihiro@gmail.com</p>
+      </div>
     </div>
   </div>
 </template>
@@ -16,6 +19,7 @@ export default {
 <style scoped>
 .top-contact {
   padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .top-contact-ttl{
@@ -29,7 +33,7 @@ export default {
 }
 
 .top-contact-email {
-  margin-left: 20px;
   font-family: 'Shippori Mincho', serif;
+  text-align: center;
 }
 </style>

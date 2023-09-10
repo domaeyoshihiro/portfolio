@@ -3,7 +3,7 @@
     <h2 class="top-skill-ttl">Skill</h2>
     <div class="top-skill-ttl-langage">
       <h3 class="top-skill-list-langage-title">Langage</h3>
-      <div class="top-skill-list-langage-flex">
+      <div class="top-skill-list-langage-grid">
         <article class="top-skill-item">
           <img 
             src="../assets/php.png" 
@@ -39,7 +39,7 @@
             alt="html/css"
             class="top-skill-item-img"
           />
-          <div class="top-skill-item-flex">
+          <div class="top-skill-item-grid">
             <p class="top-skill-item-txt">
               HTML/CSS
             </p>
@@ -53,7 +53,7 @@
     </div>
     <div class="top-skill-list-framework">
       <h3 class="top-skill-ttl-framework">Framework</h3>
-      <div class="top-skill-list-framework-flex">
+      <div class="top-skill-list-framework-grid">
         <article class="top-skill-item">
           <img
             src="../assets/laravel.png"
@@ -92,7 +92,7 @@
             alt="nuxt"
             class="top-skill-item-img"
           />
-          <div class="top-skill-item-flex">
+          <div class="top-skill-item-grid">
             <p class="top-skill-item-txt">
               Nuxt.js
             </p>
@@ -106,7 +106,7 @@
     </div>
     <div class="top-skill-list-tool">
       <h3 class="top-skill-ttl-tool">Tool</h3>
-      <div class="top-skill-list-tool-flex">
+      <div class="top-skill-list-tool-grid">
         <article class="top-skill-item">
           <img
             src="../assets/github.png"
@@ -199,12 +199,21 @@ export default {
   font-family: 'Shippori Mincho', serif;
 }
 
-.top-skill-list-langage-flex,
-.top-skill-list-framework-flex,
-.top-skill-list-tool-flex {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 20px;
+.top-skill-list-langage-title,
+.top-skill-ttl-framework,
+.top-skill-ttl-tool {
+  margin-left: 150px;
+}
+
+.top-skill-list-langage-grid,
+.top-skill-list-framework-grid,
+.top-skill-list-tool-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
+  margin: 0 200px;
 }
 
 .top-skill-item {

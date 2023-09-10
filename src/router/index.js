@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import App from '../App.vue'
+import Top from '../js/Top.vue'
 import Todo from '../components/WorkDetail/Todo.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'App',
-    component: App
+    name: 'Top-name',
+    component: Top
   },
   {
     path: '/todo',
