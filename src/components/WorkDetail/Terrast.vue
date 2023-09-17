@@ -1,22 +1,20 @@
 <template>
-  <div class="todo">
-    <div class="todo-top">
-      <h2 class="todo-ttl">Todoアプリ</h2>
-      <p class="todo-tag">個人開発</p>
+  <div class="terrast">
+    <div class="terrast-top">
+      <h2 class="terrast-ttl">Terrast</h2>
+      <p class="terrast-tag">案件開発</p>
     </div>
     <div class="slider-container">
       <button class="slider-button" @click="prevImage">&lt;</button>
-      <img :src="require(`@/assets/Todo/${images[currentImageIndex]}`)" alt="Image" class="slider-image" />
+      <img :src="require(`@/assets/Terrast/${images[currentImageIndex]}`)" alt="Image" class="slider-image" />
       <button class="slider-button" @click="nextImage">&gt;</button>
     </div>
 
     <div class="function">
-      <h3>機能</h3>
+      <h3>携わった機能</h3>
       <ul>
-        <li>タスク追加</li>
-        <li>タスク更新</li>
-        <li>タスク削除</li>
-        <li>タスク検索</li>
+        <li>環境の取水量項目追加</li>
+        <li>目標設定機能追加</li>
       </ul>
     </div>
 
@@ -24,12 +22,9 @@
       <h3>使用技術</h3>
       <ul>
         <li>Laravel</li>
+        <li>Vue.js</li>
+        <li>Docker</li>
       </ul>
-    </div>
-
-    <div class="github">
-      <h3>Github</h3>
-      <a class="github-link" href="https://github.com/domaeyoshihiro/coachtech-todolist1">todoアプリのgithubへ</a>
     </div>
   </div>
 </template>
@@ -41,10 +36,10 @@ export default {
   data() {
     return {
       images: [
-        'todo.png',
-        'todo2.png',
-        'todo3.png',
-        'todo4.png'
+        'terrast.png',
+        'terrast2.png',
+        'terrast3.png',
+        'terrast4.png',
       ],
       currentImageIndex: 0,
     };
@@ -61,25 +56,25 @@ export default {
 </script>
 
 <style scoped>
-.todo {
+.terrast {
   padding-top: 80px;
 }
 
-.todo-top {
+.terrast-top {
   text-align: center;
   font-family: 'Shippori Mincho', serif;
 }
 
-.todo-ttl{
+.terrast-ttl{
   margin-bottom: 0px;
 }
 
-.todo-tag {
+.terrast-tag {
   display: inline-block;
   text-align: center;
-  border: 1px solid #D3D3D3;
+  border: 1px solid #FFA500;
   border-radius: 5px;
-  background-color: #D3D3D3;
+  background-color: #FFA500;
   padding: 5px 10px;
 }
 
@@ -105,14 +100,8 @@ export default {
 }
 
 .function,
-.skill,
-.github {
+.skill {
   margin: 0 0 30px 40px;
-}
-
-.github-link {
-  color: #000000;
-  margin-left: 30px;
 }
 
 </style>
