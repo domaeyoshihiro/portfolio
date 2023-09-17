@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <h1 class="header-ttl">
-      <a href="" class="header-ttl-text"> YOSHIHIRO DOMAE </a>
+      <a href="/" class="header-ttl-text"> YOSHIHIRO DOMAE </a>
     </h1>
     <nav class="header-nav">
       <ul class="header-nav-list">
