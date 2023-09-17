@@ -16,43 +16,43 @@
 
       </article>
       <article class="top-work-item">
-        <a href="/rese" class="top-work-item-thumbnail">
+        <router-link to="/rese" class="top-work-item-thumbnail">
           <img 
             src="../assets/Rese/rese.png"
             alt="Rese"
             class="top-work-item-img"
           />
-        </a>
+        </router-link>
         <div class="top-work-item-info">
         </div>
         <div class="top-work-item-flex">
-          <a href="/rese" class="top-work-item-ttl">飲食店アプリ</a>
+          <router-link to="/rese" class="top-work-item-ttl">飲食店アプリ</router-link>
           <p class="top-work-item-tag">個人開発</p>
         </div>
       </article>
       <article class="top-work-item">
-        <a href="/sns" class="top-work-item-thumbnail">
+        <router-link to="/sns" class="top-work-item-thumbnail">
           <img
             src="../assets/SNS/sns.png"
             alt="SNS"
             class="top-work-item-img"
           />
-        </a>
+        </router-link>
         <div class="top-work-item-flex">
-          <a href="/sns" class="top-work-item-ttl">SNS</a>
+          <router-link to="/sns" class="top-work-item-ttl">SNS</router-link>
           <p class="top-work-item-tag">個人開発</p>
         </div>
       </article>
       <article class="top-work-item">
-        <a href="/terrast" class="top-work-item-thumbnail">
+        <router-link to="/terrast" class="top-work-item-thumbnail">
           <img
             src="../assets/Terrast/terrast.png"
             alt="Terrast"
             class="top-work-item-img"
           />
-        </a>
+        </router-link>
         <div class="top-work-item-flex">
-          <a href="/terrast" class="top-work-item-ttl">TERRAST</a>
+          <router-link to="/terrast" class="top-work-item-ttl">TERRAST</router-link>
           <p class="top-work-item-tag2">案件開発</p>
         </div>
       </article>

@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  name: 'Todo-name',
+  name: 'Terrast-name',
 
   data() {
     return {
