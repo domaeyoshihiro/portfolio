@@ -1,50 +1,49 @@
 <template>
-  <div class="sns">
-    <div class="sns-top">
-      <h2 class="sns-ttl">SNSアプリ</h2>
-      <p class="sns-tag">個人開発</p>
+  <div class="todo">
+    <div class="todo-top">
+      <h2 class="todo-ttl">Portfolio</h2>
+      <p class="todo-tag">個人開発</p>
     </div>
     <div class="slider-container">
       <button class="slider-button" @click="prevImage">&lt;</button>
-      <img :src="require(`@/assets/SNS/${images[currentImageIndex]}`)" alt="Image" class="slider-image" />
+      <img :src="require(`@/assets/Portfolio/${images[currentImageIndex]}`)" alt="Image" class="slider-image" />
       <button class="slider-button" @click="nextImage">&gt;</button>
     </div>
+
     <div class="center-container">
       <div>
         <p class="center-container-text">
-          1ヶ月かけて作成したアプリになります。<br>
-          LaravelとNuxt.jsで実装しました。<br>
-          APIの知識、バックエンドとフロントエンドのデータの受け渡しなどの知識を身につけることができました。<br>
+          ポートフォリオを作成しました。<br>
+          随時更新していきます。
         </p>
       </div>
       <div>
         <h3>期間</h3>
         <p class="center-container-text2">
-          2022年12月（1ヶ月間）
+          2023年10月〜（随時更新中）
         </p>
       </div>
       <div class="function">
-        <h3>機能</h3>
+        <h3>項目</h3>
         <ul>
-          <li>ログイン・ログアウト機能</li>
-          <li>投稿追加・削除</li>
-          <li>いいね追加・削除</li>
-          <li>コメント追加</li>
+          <li>TOP</li>
+          <li>WORKS</li>
+          <li>SKILL</li>
+          <li>PROFILE</li>
+          <li>CONTACT</li>
         </ul>
       </div>
       <div class="skill">
         <h3>使用技術</h3>
         <ul>
-          <li>Laravel</li>
-          <li>Nuxt.js</li>
-          <li>MySQL</li>
+          <li>Vue.js</li>
+          <li>Netlify</li>
           <li>Github</li>
         </ul>
       </div>
       <div class="github">
         <h3>Github</h3>
-        <a class="github-link" href="https://github.com/domaeyoshihiro/snspj">SNSアプリフロントエンドのgithubへ</a>
-        <a class="github-link" href="https://github.com/domaeyoshihiro/snspj-backend">SNSアプリバックエンドのgithubへ</a>
+        <a class="github-link" href="https://github.com/domaeyoshihiro/portfolio.git">Portfolioのgithubへ</a>
       </div>
     </div>
   </div>
@@ -52,13 +51,14 @@
 
 <script>
 export default {
-  name: 'Sns-name',
+  name: 'Portfolio-name',
 
   data() {
     return {
       images: [
-        'sns.png',
-        'sns2.png'
+        'portfolio.png',
+        'portfolio2.png',
+        'portfolio3.png',
       ],
       currentImageIndex: 0,
     };
@@ -75,20 +75,20 @@ export default {
 </script>
 
 <style scoped>
-.sns {
+.todo {
   padding-top: 80px;
 }
 
-.sns-top {
+.todo-top {
   text-align: center;
   font-family: 'Shippori Mincho', serif;
 }
 
-.sns-ttl{
+.todo-ttl{
   margin-bottom: 0px;
 }
 
-.sns-tag {
+.todo-tag {
   display: inline-block;
   text-align: center;
   border: 1px solid #D3D3D3;
@@ -133,7 +133,6 @@ export default {
 }
 
 .github-link {
-  display: block;
   color: #000000;
   margin-left: 30px;
 }

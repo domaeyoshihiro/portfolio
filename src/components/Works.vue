@@ -3,17 +3,17 @@
     <h2 class="top-work-ttl">Works</h2>
     <div class="top-work-list">
       <article class="top-work-item">
-        <router-link to="/todo" class="top-work-item-thumbnail">
-          <img 
-            src="../assets/Todo/todo.png" 
-            alt="todo" 
-            class="top-work-item-img" />
+        <router-link to="/terrast" class="top-work-item-thumbnail">
+          <img
+            src="../assets/Terrast/terrast.png"
+            alt="Terrast"
+            class="top-work-item-img"
+          />
         </router-link>
         <div class="top-work-item-flex">
-          <router-link to="/todo" class="top-work-item-ttl">Todoアプリ</router-link>
-          <p class="top-work-item-tag">個人開発</p>
+          <router-link to="/terrast" class="top-work-item-ttl">TERRAST</router-link>
+          <p class="top-work-item-tag2">案件開発</p>
         </div>
-
       </article>
       <article class="top-work-item">
         <router-link to="/rese" class="top-work-item-thumbnail">
@@ -39,21 +39,32 @@
           />
         </router-link>
         <div class="top-work-item-flex">
-          <router-link to="/sns" class="top-work-item-ttl">SNS</router-link>
+          <router-link to="/sns" class="top-work-item-ttl">SNSアプリ</router-link>
           <p class="top-work-item-tag">個人開発</p>
         </div>
       </article>
       <article class="top-work-item">
-        <router-link to="/terrast" class="top-work-item-thumbnail">
-          <img
-            src="../assets/Terrast/terrast.png"
-            alt="Terrast"
-            class="top-work-item-img"
-          />
+        <router-link to="/todo" class="top-work-item-thumbnail">
+          <img 
+            src="../assets/Todo/todo.png" 
+            alt="todo" 
+            class="top-work-item-img" />
         </router-link>
         <div class="top-work-item-flex">
-          <router-link to="/terrast" class="top-work-item-ttl">TERRAST</router-link>
-          <p class="top-work-item-tag2">案件開発</p>
+          <router-link to="/todo" class="top-work-item-ttl">Todoアプリ</router-link>
+          <p class="top-work-item-tag">個人開発</p>
+        </div>
+      </article>
+      <article class="top-work-item">
+        <router-link to="/portfolio" class="top-work-item-thumbnail">
+          <img 
+            src="../assets/Portfolio/portfolio.png" 
+            alt="portfolio" 
+            class="top-work-item-img" />
+        </router-link>
+        <div class="top-work-item-flex">
+          <router-link to="/portfolio" class="top-work-item-ttl">Portfolio</router-link>
+          <p class="top-work-item-tag">個人開発</p>
         </div>
       </article>
     </div>
@@ -68,8 +79,9 @@ export default {
 
 <style scoped>
 .top-work {
+  width : 80%;
   padding-top: 80px;
-  margin: 0 40px;
+  margin: 0 auto;
 }
 
 .top-work-ttl{
@@ -101,12 +113,12 @@ export default {
   align-items: center;
 }
 
-
 .top-work-item-ttl{
   font-weight: bold;
   font-size: 18px;
   text-decoration: none;
   color: #000000;
+  font-family: 'Shippori Mincho', serif;
 }
 
 .top-work-item-tag {

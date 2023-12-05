@@ -10,26 +10,40 @@
       <button class="slider-button" @click="nextImage">&gt;</button>
     </div>
 
-    <div class="function">
-      <h3>機能</h3>
-      <ul>
-        <li>タスク追加</li>
-        <li>タスク更新</li>
-        <li>タスク削除</li>
-        <li>タスク検索</li>
-      </ul>
-    </div>
-
-    <div class="skill">
-      <h3>使用技術</h3>
-      <ul>
-        <li>Laravel</li>
-      </ul>
-    </div>
-
-    <div class="github">
-      <h3>Github</h3>
-      <a class="github-link" href="https://github.com/domaeyoshihiro/coachtech-todolist1">todoアプリのgithubへ</a>
+    <div class="center-container">
+      <div>
+        <p class="center-container-text">
+          Laravelの基礎知識を習得しました。<br>
+          MVCやCRUDなど実際にアプリを作成することで知識を深め、プログラミング能力も向上させることができました。
+        </p>
+      </div>
+      <div>
+        <h3>期間</h3>
+        <p class="center-container-text2">
+          2022年9月,10月（2週間ほど）
+        </p>
+      </div>
+      <div class="function">
+        <h3>機能</h3>
+        <ul>
+          <li>タスク追加</li>
+          <li>タスク更新</li>
+          <li>タスク削除</li>
+          <li>タスク検索</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h3>使用技術</h3>
+        <ul>
+          <li>Laravel</li>
+          <li>MySQL</li>
+          <li>Github</li>
+        </ul>
+      </div>
+      <div class="github">
+        <h3>Github</h3>
+        <a class="github-link" href="https://github.com/domaeyoshihiro/coachtech-todolist1">Todoアプリのgithubへ</a>
+      </div>
     </div>
   </div>
 </template>
@@ -104,15 +118,22 @@ export default {
   margin-bottom: 30px;
 }
 
-.function,
-.skill,
-.github {
-  margin: 0 0 30px 40px;
+.center-container {
+  max-width: 50%;
+  margin: 0 auto 60px;
+  text-align: left;
+}
+
+.center-container-text {
+  width: 100%;
+}
+
+.center-container-text2 {
+  margin-left: 20px;
 }
 
 .github-link {
   color: #000000;
   margin-left: 30px;
 }
-
 </style>

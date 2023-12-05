@@ -18,7 +18,7 @@
         </p>
         <p class="top-profile-txt">
           HTML,CSS,JavaScript,PHPを主に学習。フレームワークはVue.js,Nuxt.js,Laravelを使用。<br>
-          2023年7月より実務案件スタート。
+          2023年7月、実務案件を経験。
         </p>
       </div>
     </div>

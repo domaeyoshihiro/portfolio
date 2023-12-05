@@ -4,7 +4,7 @@ import Todo from '../components/WorkDetail/Todo.vue'
 import Rese from '../components/WorkDetail/Rese.vue'
 import Sns from '../components/WorkDetail/Sns.vue'
 import Terrast from '../components/WorkDetail/Terrast.vue'
-
+import Portfolio from '../components/WorkDetail/Portfolio.vue'
 
 const routes = [
   {
@@ -32,11 +32,23 @@ const routes = [
     name: 'Terrast',
     component: Terrast
   },
+  {
+    path: '/portfolio',
+    name: 'Portfolio',
+    component: Portfolio
+  },
 ]
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { top: 0 };
+    }
+  },
 })
 
 export default router

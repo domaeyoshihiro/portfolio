@@ -10,21 +10,60 @@
       <button class="slider-button" @click="nextImage">&gt;</button>
     </div>
 
-    <div class="function">
-      <h3>携わった機能</h3>
-      <ul>
-        <li>環境の取水量項目追加</li>
-        <li>目標設定機能追加</li>
-      </ul>
-    </div>
-
-    <div class="skill">
-      <h3>使用技術</h3>
-      <ul>
-        <li>Laravel</li>
-        <li>Vue.js</li>
-        <li>Docker</li>
-      </ul>
+    <div class="center-container">
+      <div>
+        <p class="center-container-text">
+          プログラミングを学習してきて初めての業務案件になります。<br>
+          chart.jsを用いたグラフの作成など初めての実装も短期間で完成させることができました。<br>
+          機能の変更、新機能実装時は一度に大量の変更をしてからエラー発見をするとエラー箇所の特定が難しいです。変更時には細かく確認をするなど、丁寧な開発を心がけました。
+          エラー発生時にはChatGPTなど新しく出たツールも活用することで解決しています。<br>
+          また、期日や日々の報告などの徹底をしております。<br>
+          プログラミング能力だけではなくSlackによる業務報告やJIRAによるタスク管理などの能力も向上しました。
+        </p>
+      </div>
+      <div>
+        <h3>サービス概要</h3>
+        <p class="center-container-text2">
+          非財務情報の収集・整理・分析比較を圧倒的に効率化し、SDGs経営を推進するための「TERRAST for Enterprise」を提供している。<br>
+          質問項目に回答するだけで、AIが会社のESGカルテを作成します。<br>
+          会社のサステナ的魅力を発見・証明することができます。（公式サイトより引用）
+        </p>
+      </div>
+      <div>
+        <h3>期間</h3>
+        <p class="center-container-text2">
+          2023年7月〜2023年9月（3ヶ月間）
+        </p>
+      </div>
+      <div>
+        <h3>開発体制</h3>
+        <p class="center-container-text2">
+          PM：1名<br>
+          実装者：2名
+        </p>
+      </div>
+      <div class="function">
+        <h3>携わった機能</h3>
+        <p class="center-container-text2">
+          LaravelとVue3を用いた新機能追加のコーダーとして携わりました。<br>
+          企業の現状のESG/SDGsデータ集計の項目追加・未来のESG/SDGsデータの目標入力ページの作成を行いました。
+        </p>
+        <ul>
+          <li>環境の取水量項目追加</li>
+          <li>目標設定機能追加</li>
+          <li>chart.jsを用いたグラフの作成</li>
+        </ul>
+      </div>
+      <div class="skill">
+        <h3>使用技術</h3>
+        <ul>
+          <li>Laravel</li>
+          <li>Vue.js</li>
+          <li>Docker</li>
+          <li>MySQL</li>
+          <li>Github</li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -40,6 +79,9 @@ export default {
         'terrast2.png',
         'terrast3.png',
         'terrast4.png',
+        'terrast5.png',
+        'terrast6.png',
+        'terrast7.png',
       ],
       currentImageIndex: 0,
     };
@@ -99,9 +141,17 @@ export default {
   margin-bottom: 30px;
 }
 
-.function,
-.skill {
-  margin: 0 0 30px 40px;
+.center-container {
+  max-width: 50%;
+  margin: 0 auto 60px;
+  text-align: left;
 }
 
+.center-container-text {
+  width: 100%;
+}
+
+.center-container-text2 {
+  margin-left: 20px;
+}
 </style>

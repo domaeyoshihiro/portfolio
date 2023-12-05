@@ -166,11 +166,58 @@
               AWS
             </p>
             <img 
-              src="../assets/star4.png" 
+              src="../assets/star2.png" 
               alt="php" 
               class="top-skill-item-img-star" />
           </div>
         </article>
+      </div>
+    </div>
+    <div class="top-skill-bottom">
+      <div class="top-skill-bottom-flex">
+        <img 
+          src="../assets/star5.png" 
+          alt="php" 
+          class="top-skill-item-img-star-bottom" />
+        <p class="top-skill-item-img-star-text">
+          実務経験があり熟知している
+        </p>
+      </div>
+      <div class="top-skill-bottom-flex">
+        <img 
+          src="../assets/star4.png" 
+          alt="php" 
+          class="top-skill-item-img-star-bottom" />
+        <p class="top-skill-item-img-star-text">
+          実務経験があり
+        </p>
+      </div>
+      <div class="top-skill-bottom-flex">
+        <img 
+          src="../assets/star3.png" 
+          alt="php" 
+          class="top-skill-item-img-star-bottom" />
+        <p class="top-skill-item-img-star-text">
+          実務経験があるが使用期間が短い
+        </p>
+      </div>
+      <div class="top-skill-bottom-flex">
+        <img 
+          src="../assets/star2.png" 
+          alt="php" 
+          class="top-skill-item-img-star-bottom" />
+        <p class="top-skill-item-img-star-text">
+          個人開発の経験あり
+        </p>
+      </div>
+      <div class="top-skill-bottom-flex">
+        <img 
+          src="../assets/star1.png" 
+          alt="php" 
+          class="top-skill-item-img-star-bottom" />
+        <p class="top-skill-item-img-star-text">
+          基礎を学習済み
+        </p>
       </div>
     </div>
   </div>
@@ -202,7 +249,8 @@ export default {
 .top-skill-list-langage-title,
 .top-skill-ttl-framework,
 .top-skill-ttl-tool {
-  margin-left: 150px;
+  max-width: 65%;
+  margin: 30px auto;
 }
 
 .top-skill-list-langage-grid,
@@ -213,7 +261,8 @@ export default {
   justify-content: center;
   align-items: center;
   grid-gap: 10px;
-  margin: 0 200px;
+  max-width: 60%;
+  margin: 0 auto;
 }
 
 .top-skill-item {
@@ -247,4 +296,24 @@ export default {
   font-size: 18px;
 }
 
+.top-skill-bottom {
+  max-width: 60%;
+  margin: 40px auto 0;
+}
+
+.top-skill-bottom-flex {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.top-skill-item-img-star-bottom {
+  width: 80px;
+  height: 20px;
+  padding-right: 15px;
+}
+
+.top-skill-item-img-star-text {
+  margin: 0;
+  font-size: 14px;
+}
 </style>
