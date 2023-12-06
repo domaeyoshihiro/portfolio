@@ -47,6 +47,9 @@
         <a class="github-link" href="https://github.com/domaeyoshihiro/snspj-backend">SNSアプリバックエンドのgithubへ</a>
       </div>
     </div>
+    <div>
+      <a href="/#works" class="works-link">Works一覧へ</a>
+    </div>
   </div>
 </template>
 
@@ -136,5 +139,13 @@ export default {
   display: block;
   color: #000000;
   margin-left: 30px;
+}
+
+.works-link {
+  color: #0000FF;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 10px;    
 }
 </style>

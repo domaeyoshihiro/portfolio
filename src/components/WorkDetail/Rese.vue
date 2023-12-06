@@ -66,6 +66,9 @@
         <a class="github-link" href="https://github.com/domaeyoshihiro/coachtech-advanced-ec-site">飲食店アプリのgithubへ</a>
       </div>
     </div>
+    <div>
+      <a href="/#works" class="works-link">Works一覧へ</a>
+    </div>
   </div>
 </template>
 
@@ -164,4 +167,11 @@ export default {
   margin-left: 30px;
 }
 
+.works-link {
+  color: #0000FF;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 10px;    
+}
 </style>

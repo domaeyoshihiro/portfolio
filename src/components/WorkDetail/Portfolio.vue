@@ -9,7 +9,6 @@
       <img :src="require(`@/assets/Portfolio/${images[currentImageIndex]}`)" alt="Image" class="slider-image" />
       <button class="slider-button" @click="nextImage">&gt;</button>
     </div>
-
     <div class="center-container">
       <div>
         <p class="center-container-text">
@@ -45,6 +44,9 @@
         <h3>Github</h3>
         <a class="github-link" href="https://github.com/domaeyoshihiro/portfolio.git">Portfolioのgithubへ</a>
       </div>
+    </div>
+    <div>
+      <a href="/#works" class="works-link">Works一覧へ</a>
     </div>
   </div>
 </template>
@@ -135,5 +137,13 @@ export default {
 .github-link {
   color: #000000;
   margin-left: 30px;
+}
+
+.works-link {
+  color: #0000FF;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 10px;    
 }
 </style>

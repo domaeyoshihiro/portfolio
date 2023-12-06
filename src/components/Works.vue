@@ -7,7 +7,7 @@
           <img
             src="../assets/Terrast/terrast.png"
             alt="Terrast"
-            class="top-work-item-img"
+            class="top-work-item-img-terrast"
           />
         </router-link>
         <div class="top-work-item-flex">
@@ -20,7 +20,7 @@
           <img 
             src="../assets/Rese/rese.png"
             alt="Rese"
-            class="top-work-item-img"
+            class="top-work-item-img-rese"
           />
         </router-link>
         <div class="top-work-item-info">
@@ -35,7 +35,7 @@
           <img
             src="../assets/SNS/sns.png"
             alt="SNS"
-            class="top-work-item-img"
+            class="top-work-item-img-sns"
           />
         </router-link>
         <div class="top-work-item-flex">
@@ -48,7 +48,7 @@
           <img 
             src="../assets/Todo/todo.png" 
             alt="todo" 
-            class="top-work-item-img" />
+            class="top-work-item-img-todo" />
         </router-link>
         <div class="top-work-item-flex">
           <router-link to="/todo" class="top-work-item-ttl">Todoアプリ</router-link>
@@ -60,7 +60,7 @@
           <img 
             src="../assets/Portfolio/portfolio.png" 
             alt="portfolio" 
-            class="top-work-item-img" />
+            class="top-work-item-img-portfolio" />
         </router-link>
         <div class="top-work-item-flex">
           <router-link to="/portfolio" class="top-work-item-ttl">Portfolio</router-link>
@@ -104,9 +104,26 @@ export default {
   margin-right: 0;
 }
 
-.top-work-item-img {
+.top-work-item-img-terrast {
   width: 100%;
 }
+
+.top-work-item-img-rese {
+  width: 95%;
+}
+
+.top-work-item-img-sns {
+  width: 100%;
+}
+
+.top-work-item-img-todo {
+  width: 100%;
+}
+
+.top-work-item-img-portfolio {
+  width: 94%;
+}
+
 
 .top-work-item-flex {
   display: flex;
