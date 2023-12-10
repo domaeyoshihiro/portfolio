@@ -61,4 +61,35 @@ export default {
   font-family: 'Shippori Mincho', serif;
 }
 
+@media screen and (max-width: 768px){
+  .header-ttl-text{
+    display: block;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .header {
+    display: block;
+    padding: 0;
+  }
+  
+  .header-ttl-text{
+    display: block;
+    font-size: 16px;
+  }
+
+  .header-nav-list {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .header-nav-item {
+    font-size: 14px;
+  }
+
+  .header-nav-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
 </style>

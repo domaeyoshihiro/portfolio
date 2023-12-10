@@ -157,4 +157,50 @@ export default {
   padding: 5px 10px;
   margin-left: 15px;
 }
+
+@media screen and (max-width: 768px){
+  
+}
+
+@media screen and (max-width: 480px){
+  .top-work {
+    width : 80%;
+    padding-top: 80px;
+    margin: 0 auto;
+  }
+
+  .top-work-item-flex {
+    display: block;
+    align-items: center;
+  }
+
+  .top-work-list{
+    display: block;
+    margin-top: 20px;
+  }
+
+  .top-work-item:nth-child(3n){
+    margin-right: 0;
+  }
+
+  .top-work-item-img-terrast {
+    width: 100%;
+  }
+
+  .top-work-item-img-rese {
+    width: 95%;
+  }
+
+  .top-work-item-img-sns {
+    width: 100%;
+  }
+
+  .top-work-item-img-todo {
+    width: 100%;
+  }
+
+  .top-work-item-img-portfolio {
+    width: 94%;
+  }
+}
 </style>

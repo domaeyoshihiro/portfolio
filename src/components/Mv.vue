@@ -38,4 +38,12 @@ export default {
   text-align: center;
   font-family: 'Shippori Mincho', serif;
 }
+
+@media screen and (max-width: 768px){
+  
+}
+
+@media screen and (max-width: 480px){
+  
+}
 </style>
