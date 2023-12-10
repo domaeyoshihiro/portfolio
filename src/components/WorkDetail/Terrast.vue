@@ -141,7 +141,6 @@ export default {
 .slider-image {
   max-width: 50%;
   max-height: 80vh;
-  margin-bottom: 30px;
 }
 
 .center-container {
@@ -152,6 +151,7 @@ export default {
 
 .center-container-text {
   width: 100%;
+  margin-top: 30px;
 }
 
 .center-container-text2 {
@@ -164,5 +164,41 @@ export default {
   display: block;
   text-align: center;
   padding: 10px;    
+}
+
+@media screen and (max-width: 768px){
+  .center-container {
+    max-width: 85%;
+  }
+
+  .slider-button {
+    font-size: 24px;
+    padding: 3px 8px;
+    margin: 0 20px;
+  }
+
+  .slider-image {
+    max-width: 60%;
+    max-height: 80vh;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .center-container {
+    max-width: 85%;
+  }
+
+  .slider-button {
+    font-size: 16px;
+    padding: 3px 8px;
+    margin: 0 20px;
+  }
+
+  .slider-image {
+    max-width: 60%;
+    max-height: 80vh;
+    margin-bottom: 0;
+  }
+
 }
 </style>

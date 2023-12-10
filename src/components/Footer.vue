@@ -48,6 +48,13 @@ export default {
 }
 
 @media screen and (max-width: 480px){
-  
+  .container {
+    font-size: 10px;
+    padding: 2px 0;
+  }
+
+  .top-scroll-img {
+    width: 4%;
+  }
 }
 </style>

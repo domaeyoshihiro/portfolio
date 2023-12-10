@@ -9,7 +9,7 @@
           class="top-profile-item-img"
         />
       </div>
-      <div class="">
+      <div>
         <h3 class="top-profile-name">同前佳寛</h3>
         <p class="top-profile-txt">
           1999年6月2日生まれ。現在24歳。<br>
@@ -63,4 +63,31 @@ export default {
   margin-left: 20px;
 }
 
+@media screen and (max-width: 768px){
+  
+}
+
+@media screen and (max-width: 480px){
+  .top-profile {
+    width: 85%;
+  }
+
+  .top-profile-flex {
+    display: block;
+    justify-content: center;
+  }
+
+  .top-profile-item-img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .top-profile-name {
+    text-align: center;
+  }
+
+  .top-profile-txt {
+    font-size: 14px;
+  }
+}
 </style>

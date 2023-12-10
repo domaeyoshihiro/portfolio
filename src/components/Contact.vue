@@ -3,7 +3,7 @@
     <h2 class="top-contact-ttl">CONTACT</h2>
     <div class="top-contact-flex">
       <div>
-        <p class="top-contact-txt">お仕事の依頼などは下記メールアドレスにご連絡お願いいたします。</p>
+        <p class="top-contact-txt">お問い合わせは下記メールアドレスにご連絡お願いいたします。</p>
         <p class="top-contact-email">domae.yoshihiro@gmail.com</p>
       </div>
     </div>
@@ -36,4 +36,21 @@ export default {
   font-family: 'Shippori Mincho', serif;
   text-align: center;
 }
+
+@media screen and (max-width: 768px){
+  
+}
+
+@media screen and (max-width: 480px){
+  .top-contact {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .top-contact-txt,
+  .top-contact-email {
+    font-size: 14px;
+  }
+}
+
 </style>

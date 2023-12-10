@@ -24,7 +24,7 @@
             class="top-skill-item-img"
           />
           <div class="top-skill-item-flex">
-            <p class="top-skill-item-ttl">
+            <p class="top-skill-item-txt">
               JavaScript
             </p>
             <img 
@@ -315,5 +315,70 @@ export default {
 .top-skill-item-img-star-text {
   margin: 0;
   font-size: 14px;
+}
+
+@media screen and (max-width: 768px){
+  
+}
+
+@media screen and (max-width: 480px){
+  .top-skill-list-langage-title {
+    max-width: 100%;
+    margin: 10px 0 0;
+  }
+
+  .top-skill-ttl-framework,
+  .top-skill-ttl-tool {
+    max-width: 100%;
+    margin: 20px 0 10px;
+  }
+
+  .top-skill {
+    width: 85%;
+  }
+
+  .top-skill-list-langage-grid,
+  .top-skill-list-framework-grid,
+  .top-skill-list-tool-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 10px;
+    margin: 0 auto;
+  }
+
+  .top-skill-item {
+    width: 24%;
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .top-skill-item-img {
+    width: 60px;
+    height: 40px;
+    margin-top: 15px;
+    margin-right: 10px;
+  }
+
+  .top-skill-item-txt {
+    font-size: 14px;
+    margin: 10px 0 5px;
+  }
+
+  .top-skill-item-img-star {
+    width: 75px;
+    height: 20px;
+  }
+
+  .top-skill-bottom {
+    max-width: 100%;
+    margin: 40px 0 0;
+  }
+
+  .top-skill-item-img-star-text {
+    margin: 0;
+    font-size: 12px;
+  }
 }
 </style>
