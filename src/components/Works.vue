@@ -7,7 +7,7 @@
           <img
             src="../assets/Terrast/terrast.png"
             alt="Terrast"
-            class="top-work-item-img-terrast"
+            class="top-work-item-img"
           />
         </router-link>
         <div class="top-work-item-flex">
@@ -20,7 +20,7 @@
           <img 
             src="../assets/Rese/rese.png"
             alt="Rese"
-            class="top-work-item-img-rese"
+            class="top-work-item-img"
           />
         </router-link>
         <div class="top-work-item-info">
@@ -35,7 +35,7 @@
           <img
             src="../assets/SNS/sns.png"
             alt="SNS"
-            class="top-work-item-img-sns"
+            class="top-work-item-img"
           />
         </router-link>
         <div class="top-work-item-flex">
@@ -48,7 +48,7 @@
           <img 
             src="../assets/Todo/todo.png" 
             alt="todo" 
-            class="top-work-item-img-todo" />
+            class="top-work-item-img" />
         </router-link>
         <div class="top-work-item-flex">
           <router-link to="/todo" class="top-work-item-ttl">Todoアプリ</router-link>
@@ -60,7 +60,7 @@
           <img 
             src="../assets/Portfolio/portfolio.png" 
             alt="portfolio" 
-            class="top-work-item-img-portfolio" />
+            class="top-work-item-img" />
         </router-link>
         <div class="top-work-item-flex">
           <router-link to="/portfolio" class="top-work-item-ttl">Portfolio</router-link>
@@ -90,40 +90,20 @@ export default {
 }
 
 .top-work-list{
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   margin-top: 20px;
-}
-
-.top-work-item{
-  width: 32%;
-  margin-right: calc((100% - (32% * 3)) / 2);
 }
 
 .top-work-item:nth-child(3n){
   margin-right: 0;
 }
 
-.top-work-item-img-terrast {
+.top-work-item-img {
   width: 100%;
+  height: 70%;
 }
-
-.top-work-item-img-rese {
-  width: 95%;
-}
-
-.top-work-item-img-sns {
-  width: 100%;
-}
-
-.top-work-item-img-todo {
-  width: 100%;
-}
-
-.top-work-item-img-portfolio {
-  width: 94%;
-}
-
 
 .top-work-item-flex {
   display: flex;
@@ -159,7 +139,15 @@ export default {
 }
 
 @media screen and (max-width: 768px){
-  
+  .top-work {
+    width : 90%;
+    padding-top: 80px;
+    margin: 0 auto;
+  }
+  .top-work-list{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 480px){
